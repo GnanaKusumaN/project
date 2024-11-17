@@ -1,0 +1,81 @@
+/* Resetting some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and sections */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+section {
+  padding: 100px 20px;
+  margin-top: 100px;
+  height: 100vh;
+  transition: background-color 1s ease; /* Add smooth transition for background change */
+}
+
+/* Navigation menu styles */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(140, 233, 233);
+  z-index: 1000;
+  transition: background-color 0.3s, padding 0.3s;
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+#navbar ul li {
+  margin: 0 20px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: #ff6347; /* Tomato color */
+  transform: scale(1.1);
+}
+
+/* Section-specific background colors */
+#home {
+  background-color: #FFFDD0;
+}
+
+#services {
+  background-color: #e9ebf0;
+}
+
+#about {
+  background-color: #dcdcdc;
+}
+
+#contact {
+  background-color: #e4dfe3;
+}
+
+/* Styles for when the navbar is scrolled */
+.navbar-scrolled {
+  background-color: #c0ce67; /* Darker color when scrolled */
+  padding: 20px 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
